@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Bubbles</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Parisienne&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="confetti-layer" aria-hidden="true"></div>
+      <header class="hero">
+        <p class="eyebrow">For the love of my life</p>
+        <h1>Happy Birthday, Dina 🫧</h1>
+      </header>
+
+      <main class="game-stack">
+        <section class="story-screen active" data-screen="0">
+          <div class="game-card question-card" id="who-am-i">
+            <div class="card-header">
+              <span class="badge">Game 1</span>
+              <h2>Who am I?</h2>
+            </div>
+            <div class="options" data-answer-group="who-am-i">
+              <button class="option-btn" type="button">Your husband</button>
+              <button class="option-btn" type="button">Your boyfriend</button>
+              <button class="option-btn" type="button">Your Side piece</button>
+            </div>
+            <div class="answer-card hidden" data-reveal-card>
+              <p class="answer-text">No matter what you chose, it's wrong.</p>
+              <h3>The answer is...</h3>
+              <p class="big-answer">Fiancé</p>
+            </div>
+            <div class="card-actions">
+              <button class="next-btn" type="button" data-next="1" style="display: none;">Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-screen" data-screen="1">
+          <div class="game-card question-card" id="birthday-game">
+            <div class="card-header">
+              <span class="badge">Game 2</span>
+              <h2>When is my birthday?</h2>
+            </div>
+            <div class="options" data-answer-group="birthday-game">
+              <button class="option-btn" type="button">19 Sept</button>
+              <button class="option-btn" type="button">20 Sept</button>
+              <button class="option-btn" type="button">16 Sept</button>
+            </div>
+            <div class="answer-card hidden" data-reveal-card>
+              <p class="answer-text">It's not my birthday silly, it's yours.</p>
+              <p class="big-answer">10th September 2006</p>
+            </div>
+            <div class="card-actions">
+              <button class="next-btn" type="button" data-next="2" style="display: none;">Next</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-screen" data-screen="2">
+          <div class="letter-section" id="letter-game">
+            <div class="letter-header">
+              <span class="badge">Game 3</span>
+              <h2>Open the letter</h2>
+            </div>
+
+            <div class="letter-envelope" aria-label="Open the birthday letter" tabindex="0" role="button">
+              <div class="envelope-flap" aria-hidden="true"></div>
+              <div class="envelope-body" aria-hidden="true"></div>
+
+              <div class="letter-paper" aria-live="polite">
+                <div class="rose rose-top-left" aria-hidden="true"></div>
+                <div class="rose rose-bottom-right" aria-hidden="true"></div>
+                <div class="letter-content">
+                  <p>Happy Birthday Dina 🫧!!</p>
+                  <p>You finally turn 20, hehe ur old now</p>
+                  <p>Anyways, I would like to say I love you and I appreciate everything you have done for me this past year, every gift, every act of kindness and gentleness. I can't even begin to imagine how my life could've been without you, hm, bet it would've been dull. I wish you the best birthday ever sayang</p>
+                  <p>Don't ever say I take you for granted ahh this took a lot longer to make and perfect HAHAHAHA, I love you always my sweet girl.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
